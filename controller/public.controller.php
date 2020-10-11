@@ -26,6 +26,9 @@ if (!isset($_GET['p'])) {
         case 'lost-pass.user':
             include THE_ROOT . DIRECTORY_SEPARATOR . 'controller' . DIRECTORY_SEPARATOR . 'public' . DIRECTORY_SEPARATOR . 'cl.lost-pass.controller.php';
             break;
+        case 'fake-room.user':
+            include THE_ROOT . DIRECTORY_SEPARATOR . 'controller' . DIRECTORY_SEPARATOR . 'public' . DIRECTORY_SEPARATOR . 'cl.fake-room.controller.php';   // toDel - Testing
+            break;
         case 'home.admin':
             include THE_ROOT . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR . 'home.admin.view.php';
             break;
