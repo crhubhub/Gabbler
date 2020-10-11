@@ -24,12 +24,19 @@ if (isset($_POST['email'])) {
             if ((isset($distantEmail) && ($distantEmail === $claimedEmail))) {
 //                Sending an email which helps the user to reconnect
 //                ...and display a message which leaves the whole mystery about the 
-                $cl_infoMessageDEBUG = 'existing email';
+                echo 'mail is matching'; //toDel
+//                TODO :
+//  -sendmail()
+
+//  -toast message : ´Thank you for completing your email address, if we recognize it, we will send you an email which will allow you to recover your Gabbler account.´';
             } else {
-                $cl_infoMessageDEBUG = 'non-existing email';
+                echo 'mail is not matching'; //toDel
+//              TODO :
+//  -toast message : ´Thank you for completing your email address, if we recognize it, we will send you an email which will allow you to recover your Gabbler
+// account´';
             }
         } else {
-            $cl_infoMessageDEBUG = 'Request problem, maybe check table(s) name(s)';
+            echo 'debug : sql_req problem';
         }
 
 
